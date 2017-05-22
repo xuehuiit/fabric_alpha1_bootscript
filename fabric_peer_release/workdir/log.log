@@ -1,0 +1,498 @@
+2017-05-14 03:46:03.716 CST [ledgermgmt] initialize -> INFO 001[0m Initializing ledger mgmt
+2017-05-14 03:46:03.716 CST [kvledger] NewProvider -> INFO 002[0m Initializing ledger provider
+[36m2017-05-14 03:46:03.716 CST [kvledger.util] CreateDirIfMissing -> DEBU 003[0m CreateDirIfMissing [/home/fabric_peer_release/production/ledgersData/ledgerProvider/]
+[36m2017-05-14 03:46:03.716 CST [kvledger.util] logDirStatus -> DEBU 004[0m Before creating dir - [/home/fabric_peer_release/production/ledgersData/ledgerProvider/] does not exist
+[36m2017-05-14 03:46:03.716 CST [kvledger.util] logDirStatus -> DEBU 005[0m After creating dir - [/home/fabric_peer_release/production/ledgersData/ledgerProvider/] exists
+[36m2017-05-14 03:46:03.724 CST [kvledger.util] CreateDirIfMissing -> DEBU 006[0m CreateDirIfMissing [/home/fabric_peer_release/production/ledgersData/chains/index/]
+[36m2017-05-14 03:46:03.724 CST [kvledger.util] logDirStatus -> DEBU 007[0m Before creating dir - [/home/fabric_peer_release/production/ledgersData/chains/index/] does not exist
+[36m2017-05-14 03:46:03.724 CST [kvledger.util] logDirStatus -> DEBU 008[0m After creating dir - [/home/fabric_peer_release/production/ledgersData/chains/index/] exists
+[36m2017-05-14 03:46:03.731 CST [kvledger] NewProvider -> DEBU 009[0m Constructing leveldb VersionedDBProvider
+[36m2017-05-14 03:46:03.731 CST [stateleveldb] NewVersionedDBProvider -> DEBU 00a[0m constructing VersionedDBProvider dbPath=/home/fabric_peer_release/production/ledgersData/stateLeveldb
+[36m2017-05-14 03:46:03.731 CST [kvledger.util] CreateDirIfMissing -> DEBU 00b[0m CreateDirIfMissing [/home/fabric_peer_release/production/ledgersData/stateLeveldb/]
+[36m2017-05-14 03:46:03.731 CST [kvledger.util] logDirStatus -> DEBU 00c[0m Before creating dir - [/home/fabric_peer_release/production/ledgersData/stateLeveldb/] does not exist
+[36m2017-05-14 03:46:03.731 CST [kvledger.util] logDirStatus -> DEBU 00d[0m After creating dir - [/home/fabric_peer_release/production/ledgersData/stateLeveldb/] exists
+[36m2017-05-14 03:46:03.738 CST [historyleveldb] NewHistoryDBProvider -> DEBU 00e[0m constructing HistoryDBProvider dbPath=/home/fabric_peer_release/production/ledgersData/historyLeveldb
+[36m2017-05-14 03:46:03.738 CST [kvledger.util] CreateDirIfMissing -> DEBU 00f[0m CreateDirIfMissing [/home/fabric_peer_release/production/ledgersData/historyLeveldb/]
+[36m2017-05-14 03:46:03.738 CST [kvledger.util] logDirStatus -> DEBU 010[0m Before creating dir - [/home/fabric_peer_release/production/ledgersData/historyLeveldb/] does not exist
+[36m2017-05-14 03:46:03.738 CST [kvledger.util] logDirStatus -> DEBU 011[0m After creating dir - [/home/fabric_peer_release/production/ledgersData/historyLeveldb/] exists
+2017-05-14 03:46:03.749 CST [kvledger] NewProvider -> INFO 012[0m ledger provider Initialized
+[36m2017-05-14 03:46:03.749 CST [kvledger] recoverUnderConstructionLedger -> DEBU 013[0m Recovering under construction ledger
+[36m2017-05-14 03:46:03.749 CST [kvledger] recoverUnderConstructionLedger -> DEBU 014[0m No under construction ledger found. Quitting recovery
+2017-05-14 03:46:03.749 CST [ledgermgmt] initialize -> INFO 015[0m ledger mgmt initialized
+2017-05-14 03:46:03.750 CST [peer] func1 -> INFO 016[0m Auto detected peer address: 10.1.24.241:7051
+2017-05-14 03:46:03.750 CST [peer] func1 -> INFO 017[0m Auto detected peer address: 10.1.24.241:7051
+[36m2017-05-14 03:46:03.751 CST [eventhub_producer] AddEventType -> DEBU 018[0m registering BLOCK
+[36m2017-05-14 03:46:03.751 CST [eventhub_producer] AddEventType -> DEBU 019[0m registering CHAINCODE
+[36m2017-05-14 03:46:03.751 CST [eventhub_producer] AddEventType -> DEBU 01a[0m registering REJECTION
+[36m2017-05-14 03:46:03.751 CST [eventhub_producer] AddEventType -> DEBU 01b[0m registering REGISTER
+2017-05-14 03:46:03.751 CST [eventhub_producer] start -> INFO 01c[0m event processor started
+2017-05-14 03:46:03.751 CST [chaincode] NewChaincodeSupport -> INFO 01d[0m Chaincode support using peerAddress: 10.1.24.241:7051
+[36m2017-05-14 03:46:03.751 CST [chaincode] NewChaincodeSupport -> DEBU 01e[0m Turn off keepalive(value 0)
+[36m2017-05-14 03:46:03.751 CST [chaincode] NewChaincodeSupport -> DEBU 01f[0m Setting execute timeout value to 30000 ms
+2017-05-14 03:46:03.751 CST [sysccapi] RegisterSysCC -> INFO 020[0m system chaincode cscc(github.com/hyperledger/fabric/core/scc/cscc) registered
+2017-05-14 03:46:03.751 CST [sysccapi] RegisterSysCC -> INFO 021[0m system chaincode lccc(github.com/hyperledger/fabric/core/scc/lccc) registered
+2017-05-14 03:46:03.751 CST [sysccapi] RegisterSysCC -> INFO 022[0m system chaincode escc(github.com/hyperledger/fabric/core/scc/escc) registered
+2017-05-14 03:46:03.751 CST [sysccapi] RegisterSysCC -> INFO 023[0m system chaincode vscc(github.com/hyperledger/fabric/core/scc/vscc) registered
+2017-05-14 03:46:03.752 CST [sysccapi] RegisterSysCC -> INFO 024[0m system chaincode qscc(github.com/hyperledger/fabric/core/chaincode/qscc) registered
+[36m2017-05-14 03:46:03.752 CST [nodeCmd] serve -> DEBU 025[0m Running peer
+[36m2017-05-14 03:46:03.752 CST [msp] GetLocalMSP -> DEBU 026[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.752 CST [msp] GetDefaultSigningIdentity -> DEBU 027[0m Obtaining default signing identity
+2017-05-14 03:46:03.752 CST [gossip/service] func1 -> INFO 028[0m Initialize gossip with endpoint 10.1.24.241:7051 and bootstrap set [127.0.0.1:7051]
+[36m2017-05-14 03:46:03.752 CST [msp] GetLocalMSP -> DEBU 029[0m Returning existing local MSP
+2017-05-14 03:46:03.752 CST [msp] DeserializeIdentity -> INFO 02a[0m Obtaining identity
+[36m2017-05-14 03:46:03.752 CST [msp] newIdentity -> DEBU 02b[0m Creating identity instance for ID &{PeerOrg1 DEFAULT}
+[36m2017-05-14 03:46:03.752 CST [msp] GetLocalMSP -> DEBU 02c[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.752 CST [msp] Validate -> DEBU 02d[0m MSP PeerOrg1 validating identity
+[36m2017-05-14 03:46:03.754 CST [msp] GetLocalMSP -> DEBU 02e[0m Returning existing local MSP
+2017-05-14 03:46:03.754 CST [msp] DeserializeIdentity -> INFO 02f[0m Obtaining identity
+[36m2017-05-14 03:46:03.754 CST [msp] newIdentity -> DEBU 030[0m Creating identity instance for ID &{PeerOrg1 DEFAULT}
+[36m2017-05-14 03:46:03.754 CST [msp] GetLocalMSP -> DEBU 031[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.754 CST [msp] Validate -> DEBU 032[0m MSP PeerOrg1 validating identity
+[36m2017-05-14 03:46:03.754 CST [msp] GetLocalMSP -> DEBU 033[0m Returning existing local MSP
+2017-05-14 03:46:03.754 CST [msp] DeserializeIdentity -> INFO 034[0m Obtaining identity
+[36m2017-05-14 03:46:03.754 CST [msp] newIdentity -> DEBU 035[0m Creating identity instance for ID &{PeerOrg1 DEFAULT}
+2017-05-14 03:46:03.755 CST [gossip/discovery#10.1.24.241:7051] NewDiscoveryService -> INFO 036[0m Started {10.1.24.241:7051 [] [180 200 137 125 58 4 137 207 0 54 146 8 220 92 137 68 214 90 167 169 223 194 187 74 239 21 101 82 191 43 39 204] 10.1.24.241:7051} incTime is 1494704763754692370
+2017-05-14 03:46:03.755 CST [gossip/gossip#10.1.24.241:7051] NewGossipService -> INFO 037[0m Creating gossip service with self membership of {10.1.24.241:7051 [] [180 200 137 125 58 4 137 207 0 54 146 8 220 92 137 68 214 90 167 169 223 194 187 74 239 21 101 82 191 43 39 204] 10.1.24.241:7051}
+[36m2017-05-14 03:46:03.755 CST [msp] GetLocalMSP -> DEBU 038[0m Returning existing local MSP
+2017-05-14 03:46:03.755 CST [msp] DeserializeIdentity -> INFO 039[0m Obtaining identity
+[36m2017-05-14 03:46:03.755 CST [msp] newIdentity -> DEBU 03a[0m Creating identity instance for ID &{PeerOrg1 DEFAULT}
+[36m2017-05-14 03:46:03.755 CST [msp] GetLocalMSP -> DEBU 03b[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.755 CST [msp] Validate -> DEBU 03c[0m MSP PeerOrg1 validating identity
+[36m2017-05-14 03:46:03.755 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 03d[0m Sleeping 5s
+[36m2017-05-14 03:46:03.755 CST [msp] GetLocalMSP -> DEBU 03e[0m Returning existing local MSP
+2017-05-14 03:46:03.755 CST [msp] DeserializeIdentity -> INFO 03f[0m Obtaining identity
+[36m2017-05-14 03:46:03.755 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 040[0m Sleeping 25s
+[36m2017-05-14 03:46:03.755 CST [msp] newIdentity -> DEBU 041[0m Creating identity instance for ID &{PeerOrg1 DEFAULT}
+[36m2017-05-14 03:46:03.755 CST [msp] GetLocalMSP -> DEBU 042[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.755 CST [msp] Validate -> DEBU 043[0m MSP PeerOrg1 validating identity
+[36m2017-05-14 03:46:03.756 CST [msp] GetLocalMSP -> DEBU 044[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.756 CST [msp] GetDefaultSigningIdentity -> DEBU 045[0m Obtaining default signing identity
+[36m2017-05-14 03:46:03.756 CST [msp] Sign -> DEBU 046[0m Sign: plaintext: 1801AA01A6060A20B4C8897D3A0489CF...0A2D2D2D2D2D454E44202D2D2D2D2D0A 
+[36m2017-05-14 03:46:03.756 CST [msp] Sign -> DEBU 047[0m Sign: digest: 21536FA115216C6F78B8C471AEF35E64807344970C360EEC04DC814BD5AF2092 
+2017-05-14 03:46:03.756 CST [gossip/discovery#10.1.24.241:7051] connect2BootstrapPeers -> INFO 048[0m Entering: [127.0.0.1:7051]
+2017-05-14 03:46:03.756 CST [gossip/discovery#10.1.24.241:7051] connect2BootstrapPeers -> INFO 049[0m Exiting
+[36m2017-05-14 03:46:03.756 CST [ccprovider] NewCCContext -> DEBU 04a[0m NewCCCC (chain=,chaincode=cscc,version=1.0.0-snapshot-9e40c3c,txid=f3921393-ebe9-4f68-8248-a94567d5e034,syscc=true,proposal=0x0,canname=cscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.756 CST [chaincode] getArgsAndEnv -> DEBU 04b[0m Executable is chaincode
+[36m2017-05-14 03:46:03.756 CST [chaincode] getArgsAndEnv -> DEBU 04e[0m Args [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.756 CST [chaincode] launchAndWaitForRegister -> DEBU 04f[0m start container: cscc:1.0.0-snapshot-9e40c3c(networkid:dev,peerid:peer0)
+[36m2017-05-14 03:46:03.756 CST [gossip/gossip#10.1.24.241:7051] syncDiscovery -> DEBU 04d[0m Entering discovery sync with interval 4s
+[36m2017-05-14 03:46:03.756 CST [chaincode] launchAndWaitForRegister -> DEBU 050[0m start container with args: chaincode -peer.address=10.1.24.241:7051
+[36m2017-05-14 03:46:03.756 CST [chaincode] launchAndWaitForRegister -> DEBU 052[0m start container with env:
+	CORE_CHAINCODE_ID_NAME=cscc:1.0.0-snapshot-9e40c3c
+	CORE_PEER_TLS_ENABLED=false
+	CORE_CHAINCODE_LOGLEVEL=WARNING
+	CORE_CHAINCODE_LOGFORMAT=%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc} -> %{level:.4s} %{id:03x}%{color:reset} %{message}
+[36m2017-05-14 03:46:03.756 CST [container] lockContainer -> DEBU 053[0m waiting for container(cscc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.756 CST [container] lockContainer -> DEBU 054[0m got container (cscc-1.0.0-snapshot-9e40c3c) lock
+2017-05-14 03:46:03.756 CST [gossip/gossip#10.1.24.241:7051] start -> INFO 04c[0m Gossip instance 10.1.24.241:7051 started
+[36m2017-05-14 03:46:03.756 CST [msp] GetLocalMSP -> DEBU 051[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.756 CST [inproccontroller] getInstance -> DEBU 055[0m chaincode instance created for cscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.756 CST [msp] GetDefaultSigningIdentity -> DEBU 056[0m Obtaining default signing identity
+[36m2017-05-14 03:46:03.756 CST [msp] Sign -> DEBU 057[0m Sign: plaintext: 18012AC8060A340A1031302E312E3234...0A2D2D2D2D2D454E44202D2D2D2D2D0A 
+[36m2017-05-14 03:46:03.756 CST [container] unlockContainer -> DEBU 058[0m container lock deleted(cscc-1.0.0-snapshot-9e40c3c)
+[36m2017-05-14 03:46:03.756 CST [inproccontroller] func2 -> DEBU 05a[0m chaincode-support started for  cscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.756 CST [msp] Sign -> DEBU 059[0m Sign: digest: 5F26F93A1898B176D0BCD7CA9D4D782E2FDA1CF04C5B9DAECEB3B6C808D319B8 
+[36m2017-05-14 03:46:03.756 CST [chaincode] HandleChaincodeStream -> DEBU 05b[0m Current context deadline = 0001-01-01 00:00:00 +0000 UTC, ok = false
+[36m2017-05-14 03:46:03.756 CST [inproccontroller] func1 -> DEBU 05c[0m chaincode started for cscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.757 CST [shim] StartInProc -> DEBU 05d[0m in proc [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.757 CST [shim] StartInProc -> DEBU 05e[0m starting chat with peer using name=cscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.757 CST [shim] chatWithPeer -> DEBU 05f[0m Registering.. sending REGISTER
+[36m2017-05-14 03:46:03.757 CST [msp] GetLocalMSP -> DEBU 060[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.757 CST [msp] GetDefaultSigningIdentity -> DEBU 061[0m Obtaining default signing identity
+[36m2017-05-14 03:46:03.757 CST [chaincode] processStream -> DEBU 062[0m []Received message REGISTER from shim
+[36m2017-05-14 03:46:03.757 CST [chaincode] HandleMessage -> DEBU 064[0m []Fabric side Handling ChaincodeMessage of type: REGISTER in state created
+[36m2017-05-14 03:46:03.757 CST [msp] Sign -> DEBU 063[0m Sign: plaintext: 0A1031302E312E32342E3234313A37303531 
+[36m2017-05-14 03:46:03.757 CST [chaincode] beforeRegisterEvent -> DEBU 065[0m Received REGISTER in state created
+[36m2017-05-14 03:46:03.757 CST [msp] Sign -> DEBU 066[0m Sign: digest: 73D0677B79C4EC3E599C4C1DCC3E82060844EE3112C1DBD85C6F329A7E4D8269 
+[36m2017-05-14 03:46:03.757 CST [chaincode] registerHandler -> DEBU 067[0m registered handler complete for chaincode cscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.757 CST [chaincode] beforeRegisterEvent -> DEBU 068[0m Got REGISTER for chaincodeID = name:"cscc:1.0.0-snapshot-9e40c3c" , sending back REGISTERED
+[36m2017-05-14 03:46:03.757 CST [chaincode] notifyDuringStartup -> DEBU 069[0m Notifying during startup
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 06a[0m []Received message REGISTERED from shim
+[36m2017-05-14 03:46:03.757 CST [shim] handleMessage -> DEBU 06b[0m []Handling ChaincodeMessage of type: REGISTERED(state:created)
+[36m2017-05-14 03:46:03.757 CST [shim] beforeRegistered -> DEBU 06c[0m Received REGISTERED, ready for invocations
+[36m2017-05-14 03:46:03.757 CST [chaincode] ready -> DEBU 06d[0m sending READY
+[36m2017-05-14 03:46:03.757 CST [chaincode] setChaincodeProposal -> DEBU 06e[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.757 CST [chaincode] processStream -> DEBU 06f[0m [f3921393]Move state message READY
+[36m2017-05-14 03:46:03.757 CST [chaincode] HandleMessage -> DEBU 070[0m [f3921393]Fabric side Handling ChaincodeMessage of type: READY in state established
+[36m2017-05-14 03:46:03.757 CST [chaincode] enterReadyState -> DEBU 071[0m [f3921393]Entered state ready
+[36m2017-05-14 03:46:03.757 CST [chaincode] notify -> DEBU 072[0m notifying Txid:f3921393-ebe9-4f68-8248-a94567d5e034
+[36m2017-05-14 03:46:03.757 CST [chaincode] processStream -> DEBU 073[0m [f3921393]sending state message READY
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 074[0m [f3921393]Received message READY from shim
+[36m2017-05-14 03:46:03.757 CST [shim] handleMessage -> DEBU 075[0m [f3921393]Handling ChaincodeMessage of type: READY(state:established)
+[36m2017-05-14 03:46:03.757 CST [chaincode] Launch -> DEBU 076[0m sending init completed
+[36m2017-05-14 03:46:03.757 CST [chaincode] Launch -> DEBU 077[0m LaunchChaincode complete
+[36m2017-05-14 03:46:03.757 CST [chaincode] sendExecuteMessage -> DEBU 078[0m [f3921393]Inside sendExecuteMessage. Message INIT
+[36m2017-05-14 03:46:03.757 CST [chaincode] setChaincodeProposal -> DEBU 079[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.757 CST [chaincode] sendExecuteMessage -> DEBU 07a[0m [f3921393]sendExecuteMsg trigger event INIT
+[36m2017-05-14 03:46:03.757 CST [chaincode] processStream -> DEBU 07b[0m [f3921393]Move state message INIT
+[36m2017-05-14 03:46:03.757 CST [chaincode] HandleMessage -> DEBU 07c[0m [f3921393]Fabric side Handling ChaincodeMessage of type: INIT in state ready
+[36m2017-05-14 03:46:03.757 CST [chaincode] filterError -> DEBU 07d[0m Ignoring NoTransitionError: no transition
+[36m2017-05-14 03:46:03.757 CST [chaincode] processStream -> DEBU 07e[0m [f3921393]sending state message INIT
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 07f[0m [f3921393]Received message INIT from shim
+[36m2017-05-14 03:46:03.757 CST [shim] handleMessage -> DEBU 080[0m [f3921393]Handling ChaincodeMessage of type: INIT(state:ready)
+[36m2017-05-14 03:46:03.757 CST [shim] beforeInit -> DEBU 081[0m Entered state ready
+[36m2017-05-14 03:46:03.757 CST [shim] beforeInit -> DEBU 082[0m [f3921393]Received INIT, initializing chaincode
+2017-05-14 03:46:03.757 CST [chaincode] Init -> INFO 083[0m Init CSCC
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 084[0m [f3921393]Init get response status: 200
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 085[0m [f3921393]Init invoke succeeded. Sending COMPLETED
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 086[0m [f3921393]Move state message COMPLETED
+[36m2017-05-14 03:46:03.757 CST [shim] handleMessage -> DEBU 087[0m [f3921393]Handling ChaincodeMessage of type: COMPLETED(state:ready)
+[36m2017-05-14 03:46:03.757 CST [shim] func1 -> DEBU 088[0m [f3921393]send state message COMPLETED
+[36m2017-05-14 03:46:03.757 CST [chaincode] processStream -> DEBU 089[0m [f3921393]Received message COMPLETED from shim
+[36m2017-05-14 03:46:03.757 CST [chaincode] HandleMessage -> DEBU 08a[0m [f3921393]Fabric side Handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2017-05-14 03:46:03.757 CST [chaincode] HandleMessage -> DEBU 08b[0m [f3921393-ebe9-4f68-8248-a94567d5e034]HandleMessage- COMPLETED. Notify
+[36m2017-05-14 03:46:03.757 CST [chaincode] notify -> DEBU 08c[0m notifying Txid:f3921393-ebe9-4f68-8248-a94567d5e034
+2017-05-14 03:46:03.757 CST [sysccapi] deploySysCC -> INFO 08d[0m system chaincode cscc/(github.com/hyperledger/fabric/core/scc/cscc) deployed
+[36m2017-05-14 03:46:03.757 CST [ccprovider] NewCCContext -> DEBU 08e[0m NewCCCC (chain=,chaincode=lccc,version=1.0.0-snapshot-9e40c3c,txid=f2334f5f-8217-47ee-bc50-601a9a7e585f,syscc=true,proposal=0x0,canname=lccc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.757 CST [chaincode] getArgsAndEnv -> DEBU 08f[0m Executable is chaincode
+[36m2017-05-14 03:46:03.757 CST [chaincode] getArgsAndEnv -> DEBU 090[0m Args [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.757 CST [chaincode] launchAndWaitForRegister -> DEBU 091[0m start container: lccc:1.0.0-snapshot-9e40c3c(networkid:dev,peerid:peer0)
+[36m2017-05-14 03:46:03.757 CST [chaincode] launchAndWaitForRegister -> DEBU 092[0m start container with args: chaincode -peer.address=10.1.24.241:7051
+[36m2017-05-14 03:46:03.757 CST [chaincode] launchAndWaitForRegister -> DEBU 093[0m start container with env:
+	CORE_CHAINCODE_ID_NAME=lccc:1.0.0-snapshot-9e40c3c
+	CORE_PEER_TLS_ENABLED=false
+	CORE_CHAINCODE_LOGLEVEL=WARNING
+	CORE_CHAINCODE_LOGFORMAT=%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc} -> %{level:.4s} %{id:03x}%{color:reset} %{message}
+[36m2017-05-14 03:46:03.758 CST [container] lockContainer -> DEBU 094[0m waiting for container(lccc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.758 CST [container] lockContainer -> DEBU 095[0m got container (lccc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.758 CST [inproccontroller] getInstance -> DEBU 096[0m chaincode instance created for lccc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.758 CST [container] unlockContainer -> DEBU 097[0m container lock deleted(lccc-1.0.0-snapshot-9e40c3c)
+[36m2017-05-14 03:46:03.758 CST [inproccontroller] func2 -> DEBU 098[0m chaincode-support started for  lccc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.758 CST [chaincode] HandleChaincodeStream -> DEBU 099[0m Current context deadline = 0001-01-01 00:00:00 +0000 UTC, ok = false
+[36m2017-05-14 03:46:03.758 CST [inproccontroller] func1 -> DEBU 09a[0m chaincode started for lccc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.758 CST [shim] StartInProc -> DEBU 09b[0m in proc [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.758 CST [shim] StartInProc -> DEBU 09c[0m starting chat with peer using name=lccc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.758 CST [shim] chatWithPeer -> DEBU 09d[0m Registering.. sending REGISTER
+[36m2017-05-14 03:46:03.758 CST [chaincode] processStream -> DEBU 09e[0m []Received message REGISTER from shim
+[36m2017-05-14 03:46:03.758 CST [chaincode] HandleMessage -> DEBU 09f[0m []Fabric side Handling ChaincodeMessage of type: REGISTER in state created
+[36m2017-05-14 03:46:03.758 CST [chaincode] beforeRegisterEvent -> DEBU 0a0[0m Received REGISTER in state created
+[36m2017-05-14 03:46:03.758 CST [chaincode] registerHandler -> DEBU 0a1[0m registered handler complete for chaincode lccc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.758 CST [chaincode] beforeRegisterEvent -> DEBU 0a2[0m Got REGISTER for chaincodeID = name:"lccc:1.0.0-snapshot-9e40c3c" , sending back REGISTERED
+[36m2017-05-14 03:46:03.758 CST [chaincode] notifyDuringStartup -> DEBU 0a3[0m Notifying during startup
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0a4[0m []Received message REGISTERED from shim
+[36m2017-05-14 03:46:03.758 CST [shim] handleMessage -> DEBU 0a5[0m []Handling ChaincodeMessage of type: REGISTERED(state:created)
+[36m2017-05-14 03:46:03.758 CST [chaincode] ready -> DEBU 0a7[0m sending READY
+[36m2017-05-14 03:46:03.758 CST [chaincode] setChaincodeProposal -> DEBU 0a8[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.758 CST [shim] beforeRegistered -> DEBU 0a6[0m Received REGISTERED, ready for invocations
+[36m2017-05-14 03:46:03.758 CST [chaincode] processStream -> DEBU 0a9[0m [f2334f5f]Move state message READY
+[36m2017-05-14 03:46:03.758 CST [chaincode] HandleMessage -> DEBU 0aa[0m [f2334f5f]Fabric side Handling ChaincodeMessage of type: READY in state established
+[36m2017-05-14 03:46:03.758 CST [chaincode] enterReadyState -> DEBU 0ab[0m [f2334f5f]Entered state ready
+[36m2017-05-14 03:46:03.758 CST [chaincode] notify -> DEBU 0ac[0m notifying Txid:f2334f5f-8217-47ee-bc50-601a9a7e585f
+[36m2017-05-14 03:46:03.758 CST [chaincode] processStream -> DEBU 0ad[0m [f2334f5f]sending state message READY
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0ae[0m [f2334f5f]Received message READY from shim
+[36m2017-05-14 03:46:03.758 CST [shim] handleMessage -> DEBU 0af[0m [f2334f5f]Handling ChaincodeMessage of type: READY(state:established)
+[36m2017-05-14 03:46:03.758 CST [chaincode] Launch -> DEBU 0b0[0m sending init completed
+[36m2017-05-14 03:46:03.758 CST [chaincode] Launch -> DEBU 0b1[0m LaunchChaincode complete
+[36m2017-05-14 03:46:03.758 CST [chaincode] sendExecuteMessage -> DEBU 0b2[0m [f2334f5f]Inside sendExecuteMessage. Message INIT
+[36m2017-05-14 03:46:03.758 CST [chaincode] setChaincodeProposal -> DEBU 0b3[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.758 CST [chaincode] sendExecuteMessage -> DEBU 0b4[0m [f2334f5f]sendExecuteMsg trigger event INIT
+[36m2017-05-14 03:46:03.758 CST [chaincode] processStream -> DEBU 0b5[0m [f2334f5f]Move state message INIT
+[36m2017-05-14 03:46:03.758 CST [chaincode] HandleMessage -> DEBU 0b6[0m [f2334f5f]Fabric side Handling ChaincodeMessage of type: INIT in state ready
+[36m2017-05-14 03:46:03.758 CST [chaincode] filterError -> DEBU 0b7[0m Ignoring NoTransitionError: no transition
+[36m2017-05-14 03:46:03.758 CST [chaincode] processStream -> DEBU 0b8[0m [f2334f5f]sending state message INIT
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0b9[0m [f2334f5f]Received message INIT from shim
+[36m2017-05-14 03:46:03.758 CST [shim] handleMessage -> DEBU 0ba[0m [f2334f5f]Handling ChaincodeMessage of type: INIT(state:ready)
+[36m2017-05-14 03:46:03.758 CST [shim] beforeInit -> DEBU 0bb[0m Entered state ready
+[36m2017-05-14 03:46:03.758 CST [shim] beforeInit -> DEBU 0bc[0m [f2334f5f]Received INIT, initializing chaincode
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0bd[0m [f2334f5f]Init get response status: 200
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0be[0m [f2334f5f]Init invoke succeeded. Sending COMPLETED
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0bf[0m [f2334f5f]Move state message COMPLETED
+[36m2017-05-14 03:46:03.758 CST [shim] handleMessage -> DEBU 0c0[0m [f2334f5f]Handling ChaincodeMessage of type: COMPLETED(state:ready)
+[36m2017-05-14 03:46:03.758 CST [shim] func1 -> DEBU 0c1[0m [f2334f5f]send state message COMPLETED
+[36m2017-05-14 03:46:03.758 CST [chaincode] processStream -> DEBU 0c2[0m [f2334f5f]Received message COMPLETED from shim
+[36m2017-05-14 03:46:03.758 CST [chaincode] HandleMessage -> DEBU 0c3[0m [f2334f5f]Fabric side Handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2017-05-14 03:46:03.758 CST [chaincode] HandleMessage -> DEBU 0c4[0m [f2334f5f-8217-47ee-bc50-601a9a7e585f]HandleMessage- COMPLETED. Notify
+[36m2017-05-14 03:46:03.758 CST [chaincode] notify -> DEBU 0c5[0m notifying Txid:f2334f5f-8217-47ee-bc50-601a9a7e585f
+2017-05-14 03:46:03.758 CST [sysccapi] deploySysCC -> INFO 0c6[0m system chaincode lccc/(github.com/hyperledger/fabric/core/scc/lccc) deployed
+[36m2017-05-14 03:46:03.759 CST [ccprovider] NewCCContext -> DEBU 0c7[0m NewCCCC (chain=,chaincode=escc,version=1.0.0-snapshot-9e40c3c,txid=f84b3c4c-0fb4-4cdc-a0cc-df4131c2f6b7,syscc=true,proposal=0x0,canname=escc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.759 CST [chaincode] getArgsAndEnv -> DEBU 0c8[0m Executable is chaincode
+[36m2017-05-14 03:46:03.759 CST [chaincode] getArgsAndEnv -> DEBU 0c9[0m Args [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.759 CST [chaincode] launchAndWaitForRegister -> DEBU 0ca[0m start container: escc:1.0.0-snapshot-9e40c3c(networkid:dev,peerid:peer0)
+[36m2017-05-14 03:46:03.759 CST [chaincode] launchAndWaitForRegister -> DEBU 0cb[0m start container with args: chaincode -peer.address=10.1.24.241:7051
+[36m2017-05-14 03:46:03.759 CST [chaincode] launchAndWaitForRegister -> DEBU 0cc[0m start container with env:
+	CORE_CHAINCODE_ID_NAME=escc:1.0.0-snapshot-9e40c3c
+	CORE_PEER_TLS_ENABLED=false
+	CORE_CHAINCODE_LOGLEVEL=WARNING
+	CORE_CHAINCODE_LOGFORMAT=%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc} -> %{level:.4s} %{id:03x}%{color:reset} %{message}
+[36m2017-05-14 03:46:03.759 CST [container] lockContainer -> DEBU 0cd[0m waiting for container(escc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.759 CST [container] lockContainer -> DEBU 0ce[0m got container (escc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.759 CST [inproccontroller] getInstance -> DEBU 0cf[0m chaincode instance created for escc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.759 CST [container] unlockContainer -> DEBU 0d0[0m container lock deleted(escc-1.0.0-snapshot-9e40c3c)
+[36m2017-05-14 03:46:03.759 CST [inproccontroller] func2 -> DEBU 0d1[0m chaincode-support started for  escc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.759 CST [chaincode] HandleChaincodeStream -> DEBU 0d2[0m Current context deadline = 0001-01-01 00:00:00 +0000 UTC, ok = false
+[36m2017-05-14 03:46:03.759 CST [inproccontroller] func1 -> DEBU 0d3[0m chaincode started for escc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.759 CST [shim] StartInProc -> DEBU 0d4[0m in proc [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.759 CST [shim] StartInProc -> DEBU 0d5[0m starting chat with peer using name=escc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.759 CST [shim] chatWithPeer -> DEBU 0d6[0m Registering.. sending REGISTER
+[36m2017-05-14 03:46:03.759 CST [chaincode] processStream -> DEBU 0d7[0m []Received message REGISTER from shim
+[36m2017-05-14 03:46:03.759 CST [chaincode] HandleMessage -> DEBU 0d8[0m []Fabric side Handling ChaincodeMessage of type: REGISTER in state created
+[36m2017-05-14 03:46:03.759 CST [chaincode] beforeRegisterEvent -> DEBU 0d9[0m Received REGISTER in state created
+[36m2017-05-14 03:46:03.759 CST [chaincode] registerHandler -> DEBU 0da[0m registered handler complete for chaincode escc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.759 CST [chaincode] beforeRegisterEvent -> DEBU 0db[0m Got REGISTER for chaincodeID = name:"escc:1.0.0-snapshot-9e40c3c" , sending back REGISTERED
+[36m2017-05-14 03:46:03.759 CST [chaincode] notifyDuringStartup -> DEBU 0dc[0m Notifying during startup
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0dd[0m []Received message REGISTERED from shim
+[36m2017-05-14 03:46:03.759 CST [shim] handleMessage -> DEBU 0de[0m []Handling ChaincodeMessage of type: REGISTERED(state:created)
+[36m2017-05-14 03:46:03.759 CST [shim] beforeRegistered -> DEBU 0df[0m Received REGISTERED, ready for invocations
+[36m2017-05-14 03:46:03.759 CST [chaincode] ready -> DEBU 0e0[0m sending READY
+[36m2017-05-14 03:46:03.759 CST [chaincode] setChaincodeProposal -> DEBU 0e1[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.759 CST [chaincode] processStream -> DEBU 0e2[0m [f84b3c4c]Move state message READY
+[36m2017-05-14 03:46:03.759 CST [chaincode] HandleMessage -> DEBU 0e3[0m [f84b3c4c]Fabric side Handling ChaincodeMessage of type: READY in state established
+[36m2017-05-14 03:46:03.759 CST [chaincode] enterReadyState -> DEBU 0e4[0m [f84b3c4c]Entered state ready
+[36m2017-05-14 03:46:03.759 CST [chaincode] notify -> DEBU 0e5[0m notifying Txid:f84b3c4c-0fb4-4cdc-a0cc-df4131c2f6b7
+[36m2017-05-14 03:46:03.759 CST [chaincode] processStream -> DEBU 0e6[0m [f84b3c4c]sending state message READY
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0e7[0m [f84b3c4c]Received message READY from shim
+[36m2017-05-14 03:46:03.759 CST [shim] handleMessage -> DEBU 0e8[0m [f84b3c4c]Handling ChaincodeMessage of type: READY(state:established)
+[36m2017-05-14 03:46:03.759 CST [chaincode] Launch -> DEBU 0e9[0m sending init completed
+[36m2017-05-14 03:46:03.759 CST [chaincode] Launch -> DEBU 0ea[0m LaunchChaincode complete
+[36m2017-05-14 03:46:03.759 CST [chaincode] sendExecuteMessage -> DEBU 0eb[0m [f84b3c4c]Inside sendExecuteMessage. Message INIT
+[36m2017-05-14 03:46:03.759 CST [chaincode] setChaincodeProposal -> DEBU 0ec[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.759 CST [chaincode] sendExecuteMessage -> DEBU 0ed[0m [f84b3c4c]sendExecuteMsg trigger event INIT
+[36m2017-05-14 03:46:03.759 CST [chaincode] processStream -> DEBU 0ee[0m [f84b3c4c]Move state message INIT
+[36m2017-05-14 03:46:03.759 CST [chaincode] HandleMessage -> DEBU 0ef[0m [f84b3c4c]Fabric side Handling ChaincodeMessage of type: INIT in state ready
+[36m2017-05-14 03:46:03.759 CST [chaincode] filterError -> DEBU 0f0[0m Ignoring NoTransitionError: no transition
+[36m2017-05-14 03:46:03.759 CST [chaincode] processStream -> DEBU 0f1[0m [f84b3c4c]sending state message INIT
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0f2[0m [f84b3c4c]Received message INIT from shim
+[36m2017-05-14 03:46:03.759 CST [shim] handleMessage -> DEBU 0f3[0m [f84b3c4c]Handling ChaincodeMessage of type: INIT(state:ready)
+[36m2017-05-14 03:46:03.759 CST [shim] beforeInit -> DEBU 0f4[0m Entered state ready
+[36m2017-05-14 03:46:03.759 CST [shim] beforeInit -> DEBU 0f5[0m [f84b3c4c]Received INIT, initializing chaincode
+2017-05-14 03:46:03.759 CST [escc] Init -> INFO 0f6[0m Successfully initialized ESCC
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0f7[0m [f84b3c4c]Init get response status: 200
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0f8[0m [f84b3c4c]Init invoke succeeded. Sending COMPLETED
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0f9[0m [f84b3c4c]Move state message COMPLETED
+[36m2017-05-14 03:46:03.759 CST [shim] handleMessage -> DEBU 0fa[0m [f84b3c4c]Handling ChaincodeMessage of type: COMPLETED(state:ready)
+[36m2017-05-14 03:46:03.759 CST [shim] func1 -> DEBU 0fb[0m [f84b3c4c]send state message COMPLETED
+[36m2017-05-14 03:46:03.759 CST [chaincode] processStream -> DEBU 0fc[0m [f84b3c4c]Received message COMPLETED from shim
+[36m2017-05-14 03:46:03.759 CST [chaincode] HandleMessage -> DEBU 0fd[0m [f84b3c4c]Fabric side Handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2017-05-14 03:46:03.759 CST [chaincode] HandleMessage -> DEBU 0fe[0m [f84b3c4c-0fb4-4cdc-a0cc-df4131c2f6b7]HandleMessage- COMPLETED. Notify
+[36m2017-05-14 03:46:03.759 CST [chaincode] notify -> DEBU 0ff[0m notifying Txid:f84b3c4c-0fb4-4cdc-a0cc-df4131c2f6b7
+2017-05-14 03:46:03.759 CST [sysccapi] deploySysCC -> INFO 100[0m system chaincode escc/(github.com/hyperledger/fabric/core/scc/escc) deployed
+[36m2017-05-14 03:46:03.760 CST [ccprovider] NewCCContext -> DEBU 101[0m NewCCCC (chain=,chaincode=vscc,version=1.0.0-snapshot-9e40c3c,txid=5a51da62-5113-497e-a15b-c70be61c2a43,syscc=true,proposal=0x0,canname=vscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.760 CST [chaincode] getArgsAndEnv -> DEBU 102[0m Executable is chaincode
+[36m2017-05-14 03:46:03.760 CST [chaincode] getArgsAndEnv -> DEBU 103[0m Args [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.760 CST [chaincode] launchAndWaitForRegister -> DEBU 104[0m start container: vscc:1.0.0-snapshot-9e40c3c(networkid:dev,peerid:peer0)
+[36m2017-05-14 03:46:03.760 CST [chaincode] launchAndWaitForRegister -> DEBU 105[0m start container with args: chaincode -peer.address=10.1.24.241:7051
+[36m2017-05-14 03:46:03.760 CST [chaincode] launchAndWaitForRegister -> DEBU 106[0m start container with env:
+	CORE_CHAINCODE_ID_NAME=vscc:1.0.0-snapshot-9e40c3c
+	CORE_PEER_TLS_ENABLED=false
+	CORE_CHAINCODE_LOGLEVEL=WARNING
+	CORE_CHAINCODE_LOGFORMAT=%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc} -> %{level:.4s} %{id:03x}%{color:reset} %{message}
+[36m2017-05-14 03:46:03.760 CST [container] lockContainer -> DEBU 107[0m waiting for container(vscc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.760 CST [container] lockContainer -> DEBU 108[0m got container (vscc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.760 CST [inproccontroller] getInstance -> DEBU 109[0m chaincode instance created for vscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.760 CST [container] unlockContainer -> DEBU 10a[0m container lock deleted(vscc-1.0.0-snapshot-9e40c3c)
+[36m2017-05-14 03:46:03.760 CST [inproccontroller] func2 -> DEBU 10b[0m chaincode-support started for  vscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.760 CST [chaincode] HandleChaincodeStream -> DEBU 10c[0m Current context deadline = 0001-01-01 00:00:00 +0000 UTC, ok = false
+[36m2017-05-14 03:46:03.760 CST [inproccontroller] func1 -> DEBU 10d[0m chaincode started for vscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.760 CST [shim] StartInProc -> DEBU 10e[0m in proc [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.760 CST [shim] StartInProc -> DEBU 10f[0m starting chat with peer using name=vscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.760 CST [shim] chatWithPeer -> DEBU 110[0m Registering.. sending REGISTER
+[36m2017-05-14 03:46:03.760 CST [chaincode] processStream -> DEBU 111[0m []Received message REGISTER from shim
+[36m2017-05-14 03:46:03.760 CST [chaincode] HandleMessage -> DEBU 112[0m []Fabric side Handling ChaincodeMessage of type: REGISTER in state created
+[36m2017-05-14 03:46:03.760 CST [chaincode] beforeRegisterEvent -> DEBU 113[0m Received REGISTER in state created
+[36m2017-05-14 03:46:03.760 CST [chaincode] registerHandler -> DEBU 114[0m registered handler complete for chaincode vscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.760 CST [chaincode] beforeRegisterEvent -> DEBU 115[0m Got REGISTER for chaincodeID = name:"vscc:1.0.0-snapshot-9e40c3c" , sending back REGISTERED
+[36m2017-05-14 03:46:03.760 CST [chaincode] notifyDuringStartup -> DEBU 116[0m Notifying during startup
+[36m2017-05-14 03:46:03.760 CST [shim] func1 -> DEBU 117[0m []Received message REGISTERED from shim
+[36m2017-05-14 03:46:03.760 CST [shim] handleMessage -> DEBU 118[0m []Handling ChaincodeMessage of type: REGISTERED(state:created)
+[36m2017-05-14 03:46:03.760 CST [shim] beforeRegistered -> DEBU 119[0m Received REGISTERED, ready for invocations
+[36m2017-05-14 03:46:03.760 CST [chaincode] ready -> DEBU 11a[0m sending READY
+[36m2017-05-14 03:46:03.760 CST [chaincode] setChaincodeProposal -> DEBU 11b[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.760 CST [chaincode] processStream -> DEBU 11c[0m [5a51da62]Move state message READY
+[36m2017-05-14 03:46:03.760 CST [chaincode] HandleMessage -> DEBU 11d[0m [5a51da62]Fabric side Handling ChaincodeMessage of type: READY in state established
+[36m2017-05-14 03:46:03.760 CST [chaincode] enterReadyState -> DEBU 11e[0m [5a51da62]Entered state ready
+[36m2017-05-14 03:46:03.760 CST [chaincode] notify -> DEBU 11f[0m notifying Txid:5a51da62-5113-497e-a15b-c70be61c2a43
+[36m2017-05-14 03:46:03.760 CST [chaincode] processStream -> DEBU 120[0m [5a51da62]sending state message READY
+[36m2017-05-14 03:46:03.760 CST [chaincode] Launch -> DEBU 121[0m sending init completed
+[36m2017-05-14 03:46:03.760 CST [shim] func1 -> DEBU 122[0m [5a51da62]Received message READY from shim
+[36m2017-05-14 03:46:03.760 CST [shim] handleMessage -> DEBU 124[0m [5a51da62]Handling ChaincodeMessage of type: READY(state:established)
+[36m2017-05-14 03:46:03.760 CST [chaincode] Launch -> DEBU 123[0m LaunchChaincode complete
+[36m2017-05-14 03:46:03.760 CST [chaincode] sendExecuteMessage -> DEBU 125[0m [5a51da62]Inside sendExecuteMessage. Message INIT
+[36m2017-05-14 03:46:03.760 CST [chaincode] setChaincodeProposal -> DEBU 126[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.760 CST [chaincode] sendExecuteMessage -> DEBU 127[0m [5a51da62]sendExecuteMsg trigger event INIT
+[36m2017-05-14 03:46:03.760 CST [chaincode] processStream -> DEBU 128[0m [5a51da62]Move state message INIT
+[36m2017-05-14 03:46:03.760 CST [chaincode] HandleMessage -> DEBU 129[0m [5a51da62]Fabric side Handling ChaincodeMessage of type: INIT in state ready
+[36m2017-05-14 03:46:03.760 CST [chaincode] filterError -> DEBU 12a[0m Ignoring NoTransitionError: no transition
+[36m2017-05-14 03:46:03.760 CST [chaincode] processStream -> DEBU 12b[0m [5a51da62]sending state message INIT
+[36m2017-05-14 03:46:03.760 CST [shim] func1 -> DEBU 12c[0m [5a51da62]Received message INIT from shim
+[36m2017-05-14 03:46:03.760 CST [shim] handleMessage -> DEBU 12d[0m [5a51da62]Handling ChaincodeMessage of type: INIT(state:ready)
+[36m2017-05-14 03:46:03.760 CST [shim] beforeInit -> DEBU 12e[0m Entered state ready
+[36m2017-05-14 03:46:03.760 CST [shim] beforeInit -> DEBU 12f[0m [5a51da62]Received INIT, initializing chaincode
+[36m2017-05-14 03:46:03.760 CST [shim] func1 -> DEBU 130[0m [5a51da62]Init get response status: 200
+[36m2017-05-14 03:46:03.760 CST [shim] func1 -> DEBU 131[0m [5a51da62]Init invoke succeeded. Sending COMPLETED
+[36m2017-05-14 03:46:03.760 CST [shim] func1 -> DEBU 132[0m [5a51da62]Move state message COMPLETED
+[36m2017-05-14 03:46:03.761 CST [shim] handleMessage -> DEBU 133[0m [5a51da62]Handling ChaincodeMessage of type: COMPLETED(state:ready)
+[36m2017-05-14 03:46:03.761 CST [shim] func1 -> DEBU 134[0m [5a51da62]send state message COMPLETED
+[36m2017-05-14 03:46:03.761 CST [chaincode] processStream -> DEBU 135[0m [5a51da62]Received message COMPLETED from shim
+[36m2017-05-14 03:46:03.761 CST [chaincode] HandleMessage -> DEBU 136[0m [5a51da62]Fabric side Handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2017-05-14 03:46:03.761 CST [chaincode] HandleMessage -> DEBU 137[0m [5a51da62-5113-497e-a15b-c70be61c2a43]HandleMessage- COMPLETED. Notify
+[36m2017-05-14 03:46:03.761 CST [chaincode] notify -> DEBU 138[0m notifying Txid:5a51da62-5113-497e-a15b-c70be61c2a43
+2017-05-14 03:46:03.761 CST [sysccapi] deploySysCC -> INFO 139[0m system chaincode vscc/(github.com/hyperledger/fabric/core/scc/vscc) deployed
+[36m2017-05-14 03:46:03.761 CST [ccprovider] NewCCContext -> DEBU 13a[0m NewCCCC (chain=,chaincode=qscc,version=1.0.0-snapshot-9e40c3c,txid=4836fe0f-f857-40da-97f2-cb93b7b3651b,syscc=true,proposal=0x0,canname=qscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.761 CST [chaincode] getArgsAndEnv -> DEBU 13b[0m Executable is chaincode
+[36m2017-05-14 03:46:03.761 CST [chaincode] getArgsAndEnv -> DEBU 13c[0m Args [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.761 CST [chaincode] launchAndWaitForRegister -> DEBU 13d[0m start container: qscc:1.0.0-snapshot-9e40c3c(networkid:dev,peerid:peer0)
+[36m2017-05-14 03:46:03.761 CST [chaincode] launchAndWaitForRegister -> DEBU 13e[0m start container with args: chaincode -peer.address=10.1.24.241:7051
+[36m2017-05-14 03:46:03.761 CST [chaincode] launchAndWaitForRegister -> DEBU 13f[0m start container with env:
+	CORE_CHAINCODE_ID_NAME=qscc:1.0.0-snapshot-9e40c3c
+	CORE_PEER_TLS_ENABLED=false
+	CORE_CHAINCODE_LOGLEVEL=WARNING
+	CORE_CHAINCODE_LOGFORMAT=%{color}%{time:2006-01-02 15:04:05.000 MST} [%{module}] %{shortfunc} -> %{level:.4s} %{id:03x}%{color:reset} %{message}
+[36m2017-05-14 03:46:03.761 CST [container] lockContainer -> DEBU 140[0m waiting for container(qscc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.761 CST [container] lockContainer -> DEBU 141[0m got container (qscc-1.0.0-snapshot-9e40c3c) lock
+[36m2017-05-14 03:46:03.761 CST [inproccontroller] getInstance -> DEBU 142[0m chaincode instance created for qscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.761 CST [container] unlockContainer -> DEBU 143[0m container lock deleted(qscc-1.0.0-snapshot-9e40c3c)
+[36m2017-05-14 03:46:03.761 CST [inproccontroller] func2 -> DEBU 144[0m chaincode-support started for  qscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.761 CST [chaincode] HandleChaincodeStream -> DEBU 145[0m Current context deadline = 0001-01-01 00:00:00 +0000 UTC, ok = false
+[36m2017-05-14 03:46:03.761 CST [inproccontroller] func1 -> DEBU 146[0m chaincode started for qscc-1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.761 CST [shim] StartInProc -> DEBU 147[0m in proc [chaincode -peer.address=10.1.24.241:7051]
+[36m2017-05-14 03:46:03.761 CST [shim] StartInProc -> DEBU 148[0m starting chat with peer using name=qscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.761 CST [shim] chatWithPeer -> DEBU 149[0m Registering.. sending REGISTER
+[36m2017-05-14 03:46:03.761 CST [chaincode] processStream -> DEBU 14a[0m []Received message REGISTER from shim
+[36m2017-05-14 03:46:03.761 CST [chaincode] HandleMessage -> DEBU 14b[0m []Fabric side Handling ChaincodeMessage of type: REGISTER in state created
+[36m2017-05-14 03:46:03.761 CST [chaincode] beforeRegisterEvent -> DEBU 14c[0m Received REGISTER in state created
+[36m2017-05-14 03:46:03.761 CST [chaincode] registerHandler -> DEBU 14d[0m registered handler complete for chaincode qscc:1.0.0-snapshot-9e40c3c
+[36m2017-05-14 03:46:03.761 CST [chaincode] beforeRegisterEvent -> DEBU 14e[0m Got REGISTER for chaincodeID = name:"qscc:1.0.0-snapshot-9e40c3c" , sending back REGISTERED
+[36m2017-05-14 03:46:03.761 CST [chaincode] notifyDuringStartup -> DEBU 14f[0m Notifying during startup
+[36m2017-05-14 03:46:03.761 CST [shim] func1 -> DEBU 150[0m []Received message REGISTERED from shim
+[36m2017-05-14 03:46:03.761 CST [shim] handleMessage -> DEBU 151[0m []Handling ChaincodeMessage of type: REGISTERED(state:created)
+[36m2017-05-14 03:46:03.761 CST [chaincode] ready -> DEBU 153[0m sending READY
+[36m2017-05-14 03:46:03.761 CST [chaincode] setChaincodeProposal -> DEBU 154[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.761 CST [chaincode] processStream -> DEBU 155[0m [4836fe0f]Move state message READY
+[36m2017-05-14 03:46:03.761 CST [chaincode] HandleMessage -> DEBU 156[0m [4836fe0f]Fabric side Handling ChaincodeMessage of type: READY in state established
+[36m2017-05-14 03:46:03.761 CST [chaincode] enterReadyState -> DEBU 157[0m [4836fe0f]Entered state ready
+[36m2017-05-14 03:46:03.761 CST [shim] beforeRegistered -> DEBU 152[0m Received REGISTERED, ready for invocations
+[36m2017-05-14 03:46:03.761 CST [chaincode] notify -> DEBU 158[0m notifying Txid:4836fe0f-f857-40da-97f2-cb93b7b3651b
+[36m2017-05-14 03:46:03.761 CST [chaincode] processStream -> DEBU 159[0m [4836fe0f]sending state message READY
+[36m2017-05-14 03:46:03.761 CST [shim] func1 -> DEBU 15a[0m [4836fe0f]Received message READY from shim
+[36m2017-05-14 03:46:03.761 CST [shim] handleMessage -> DEBU 15b[0m [4836fe0f]Handling ChaincodeMessage of type: READY(state:established)
+[36m2017-05-14 03:46:03.761 CST [chaincode] Launch -> DEBU 15c[0m sending init completed
+[36m2017-05-14 03:46:03.761 CST [chaincode] Launch -> DEBU 15d[0m LaunchChaincode complete
+[36m2017-05-14 03:46:03.761 CST [chaincode] sendExecuteMessage -> DEBU 15e[0m [4836fe0f]Inside sendExecuteMessage. Message INIT
+[36m2017-05-14 03:46:03.761 CST [chaincode] setChaincodeProposal -> DEBU 15f[0m Setting chaincode proposal context...
+[36m2017-05-14 03:46:03.761 CST [chaincode] sendExecuteMessage -> DEBU 160[0m [4836fe0f]sendExecuteMsg trigger event INIT
+[36m2017-05-14 03:46:03.761 CST [chaincode] processStream -> DEBU 161[0m [4836fe0f]Move state message INIT
+[36m2017-05-14 03:46:03.761 CST [chaincode] HandleMessage -> DEBU 162[0m [4836fe0f]Fabric side Handling ChaincodeMessage of type: INIT in state ready
+[36m2017-05-14 03:46:03.761 CST [chaincode] filterError -> DEBU 163[0m Ignoring NoTransitionError: no transition
+[36m2017-05-14 03:46:03.761 CST [chaincode] processStream -> DEBU 164[0m [4836fe0f]sending state message INIT
+[36m2017-05-14 03:46:03.761 CST [shim] func1 -> DEBU 165[0m [4836fe0f]Received message INIT from shim
+[36m2017-05-14 03:46:03.761 CST [shim] handleMessage -> DEBU 166[0m [4836fe0f]Handling ChaincodeMessage of type: INIT(state:ready)
+[36m2017-05-14 03:46:03.761 CST [shim] beforeInit -> DEBU 167[0m Entered state ready
+[36m2017-05-14 03:46:03.761 CST [shim] beforeInit -> DEBU 168[0m [4836fe0f]Received INIT, initializing chaincode
+2017-05-14 03:46:03.761 CST [qscc] Init -> INFO 169[0m Init QSCC
+[36m2017-05-14 03:46:03.762 CST [msp] GetLocalMSP -> DEBU 16a[0m Returning existing local MSP
+[36m2017-05-14 03:46:03.762 CST [shim] func1 -> DEBU 16b[0m [4836fe0f]Init get response status: 200
+[36m2017-05-14 03:46:03.762 CST [shim] func1 -> DEBU 16c[0m [4836fe0f]Init invoke succeeded. Sending COMPLETED
+[36m2017-05-14 03:46:03.762 CST [shim] func1 -> DEBU 16d[0m [4836fe0f]Move state message COMPLETED
+[36m2017-05-14 03:46:03.762 CST [shim] handleMessage -> DEBU 16e[0m [4836fe0f]Handling ChaincodeMessage of type: COMPLETED(state:ready)
+[36m2017-05-14 03:46:03.762 CST [shim] func1 -> DEBU 16f[0m [4836fe0f]send state message COMPLETED
+[36m2017-05-14 03:46:03.762 CST [chaincode] processStream -> DEBU 170[0m [4836fe0f]Received message COMPLETED from shim
+[36m2017-05-14 03:46:03.762 CST [chaincode] HandleMessage -> DEBU 171[0m [4836fe0f]Fabric side Handling ChaincodeMessage of type: COMPLETED in state ready
+[36m2017-05-14 03:46:03.762 CST [chaincode] HandleMessage -> DEBU 172[0m [4836fe0f-f857-40da-97f2-cb93b7b3651b]HandleMessage- COMPLETED. Notify
+[36m2017-05-14 03:46:03.762 CST [chaincode] notify -> DEBU 173[0m notifying Txid:4836fe0f-f857-40da-97f2-cb93b7b3651b
+2017-05-14 03:46:03.762 CST [sysccapi] deploySysCC -> INFO 174[0m system chaincode qscc/(github.com/hyperledger/fabric/core/chaincode/qscc) deployed
+2017-05-14 03:46:03.762 CST [nodeCmd] initSysCCs -> INFO 175[0m Deployed system chaincodess
+2017-05-14 03:46:03.762 CST [nodeCmd] serve -> INFO 176[0m Starting peer with ID=[name:"peer0" ], network ID=[dev], address=[10.1.24.241:7051]
+2017-05-14 03:46:03.768 CST [nodeCmd] serve -> INFO 177[0m Started peer with ID=[name:"peer0" ], network ID=[dev], address=[10.1.24.241:7051]
+[36m2017-05-14 03:46:03.768 CST [flogging] SetModuleLevel -> DEBU 178[0m Module 'error' logger enabled for log level 'WARNING'
+[36m2017-05-14 03:46:03.768 CST [flogging] SetModuleLevel -> DEBU 179[0m Module 'msp' logger enabled for log level 'WARNING'
+[36m2017-05-14 03:46:08.756 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 17a[0m Sleeping 5s
+[36m2017-05-14 03:46:13.757 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 17b[0m Sleeping 5s
+[36m2017-05-14 03:46:18.758 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 17c[0m Sleeping 5s
+[36m2017-05-14 03:46:23.758 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 17d[0m Sleeping 5s
+[36m2017-05-14 03:46:28.757 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 17e[0m Sleeping 25s
+[36m2017-05-14 03:46:28.759 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 17f[0m Sleeping 5s
+[36m2017-05-14 03:46:33.760 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 180[0m Sleeping 5s
+[36m2017-05-14 03:46:38.760 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 181[0m Sleeping 5s
+[36m2017-05-14 03:46:43.761 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 182[0m Sleeping 5s
+[36m2017-05-14 03:46:48.762 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 183[0m Sleeping 5s
+[36m2017-05-14 03:46:53.758 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 184[0m Sleeping 25s
+[36m2017-05-14 03:46:53.762 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 185[0m Sleeping 5s
+[36m2017-05-14 03:46:58.763 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 186[0m Sleeping 5s
+[36m2017-05-14 03:47:03.764 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 187[0m Sleeping 5s
+[36m2017-05-14 03:47:08.765 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 188[0m Sleeping 5s
+[36m2017-05-14 03:47:13.765 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 189[0m Sleeping 5s
+[36m2017-05-14 03:47:18.759 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 18a[0m Sleeping 25s
+[36m2017-05-14 03:47:18.766 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 18b[0m Sleeping 5s
+[36m2017-05-14 03:47:23.766 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 18c[0m Sleeping 5s
+[36m2017-05-14 03:47:28.767 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 18d[0m Sleeping 5s
+[36m2017-05-14 03:47:33.768 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 18e[0m Sleeping 5s
+[36m2017-05-14 03:47:38.769 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 18f[0m Sleeping 5s
+[36m2017-05-14 03:47:43.760 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 190[0m Sleeping 25s
+[36m2017-05-14 03:47:43.769 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 191[0m Sleeping 5s
+[36m2017-05-14 03:47:48.770 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 192[0m Sleeping 5s
+[36m2017-05-14 03:47:53.771 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 193[0m Sleeping 5s
+[36m2017-05-14 03:47:58.772 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 194[0m Sleeping 5s
+[36m2017-05-14 03:48:03.772 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 195[0m Sleeping 5s
+[36m2017-05-14 03:48:08.762 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 196[0m Sleeping 25s
+[36m2017-05-14 03:48:08.773 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 197[0m Sleeping 5s
+[36m2017-05-14 03:48:13.774 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 198[0m Sleeping 5s
+[36m2017-05-14 03:48:18.775 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 199[0m Sleeping 5s
+[36m2017-05-14 03:48:23.775 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 19a[0m Sleeping 5s
+[36m2017-05-14 03:48:28.776 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 19b[0m Sleeping 5s
+[36m2017-05-14 03:48:33.763 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 19c[0m Sleeping 25s
+[36m2017-05-14 03:48:33.777 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 19d[0m Sleeping 5s
+[36m2017-05-14 03:48:38.778 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 19e[0m Sleeping 5s
+[36m2017-05-14 03:48:43.779 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 19f[0m Sleeping 5s
+[36m2017-05-14 03:48:48.779 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a0[0m Sleeping 5s
+[36m2017-05-14 03:48:53.780 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a1[0m Sleeping 5s
+[36m2017-05-14 03:48:58.765 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1a2[0m Sleeping 25s
+[36m2017-05-14 03:48:58.781 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a3[0m Sleeping 5s
+[36m2017-05-14 03:49:03.782 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a4[0m Sleeping 5s
+[36m2017-05-14 03:49:08.782 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a5[0m Sleeping 5s
+[36m2017-05-14 03:49:13.783 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a6[0m Sleeping 5s
+[36m2017-05-14 03:49:18.784 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a7[0m Sleeping 5s
+[36m2017-05-14 03:49:23.766 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1a8[0m Sleeping 25s
+[36m2017-05-14 03:49:23.785 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1a9[0m Sleeping 5s
+[36m2017-05-14 03:49:28.786 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1aa[0m Sleeping 5s
+[36m2017-05-14 03:49:33.787 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1ab[0m Sleeping 5s
+[36m2017-05-14 03:49:38.787 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1ac[0m Sleeping 5s
+[36m2017-05-14 03:49:43.788 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1ad[0m Sleeping 5s
+[36m2017-05-14 03:49:48.767 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1ae[0m Sleeping 25s
+[36m2017-05-14 03:49:48.789 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1af[0m Sleeping 5s
+[36m2017-05-14 03:49:53.790 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b0[0m Sleeping 5s
+[36m2017-05-14 03:49:58.790 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b1[0m Sleeping 5s
+[36m2017-05-14 03:50:03.791 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b2[0m Sleeping 5s
+[36m2017-05-14 03:50:08.792 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b3[0m Sleeping 5s
+[36m2017-05-14 03:50:13.768 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1b4[0m Sleeping 25s
+[36m2017-05-14 03:50:13.793 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b5[0m Sleeping 5s
+[36m2017-05-14 03:50:18.793 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b6[0m Sleeping 5s
+[36m2017-05-14 03:50:23.794 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b7[0m Sleeping 5s
+[36m2017-05-14 03:50:28.795 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b8[0m Sleeping 5s
+[36m2017-05-14 03:50:33.795 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1b9[0m Sleeping 5s
+[36m2017-05-14 03:50:38.769 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1ba[0m Sleeping 25s
+[36m2017-05-14 03:50:38.796 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1bb[0m Sleeping 5s
+[36m2017-05-14 03:50:43.797 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1bc[0m Sleeping 5s
+[36m2017-05-14 03:50:48.797 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1bd[0m Sleeping 5s
+[36m2017-05-14 03:50:53.798 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1be[0m Sleeping 5s
+[36m2017-05-14 03:50:58.799 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1bf[0m Sleeping 5s
+[36m2017-05-14 03:51:03.771 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1c0[0m Sleeping 25s
+[36m2017-05-14 03:51:03.800 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c1[0m Sleeping 5s
+[36m2017-05-14 03:51:08.802 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c2[0m Sleeping 5s
+[36m2017-05-14 03:51:13.803 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c3[0m Sleeping 5s
+[36m2017-05-14 03:51:18.804 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c4[0m Sleeping 5s
+[36m2017-05-14 03:51:23.805 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c5[0m Sleeping 5s
+[36m2017-05-14 03:51:28.773 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1c6[0m Sleeping 25s
+[36m2017-05-14 03:51:28.807 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c7[0m Sleeping 5s
+[36m2017-05-14 03:51:33.808 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c8[0m Sleeping 5s
+[36m2017-05-14 03:51:38.808 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1c9[0m Sleeping 5s
+[36m2017-05-14 03:51:43.809 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1ca[0m Sleeping 5s
+[36m2017-05-14 03:51:48.810 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1cb[0m Sleeping 5s
+[36m2017-05-14 03:51:53.775 CST [gossip/discovery#10.1.24.241:7051] periodicalReconnectToDead -> DEBU 1cc[0m Sleeping 25s
+[36m2017-05-14 03:51:53.811 CST [gossip/discovery#10.1.24.241:7051] periodicalSendAlive -> DEBU 1cd[0m Sleeping 5s
+
+terminated
+2017-05-14 03:51:56.454 CST [gossip/gossip#10.1.24.241:7051] Stop -> INFO 1ce[0m Stopping gossip
+2017-05-14 03:51:56.454 CST [gossip/discovery#10.1.24.241:7051] Stop -> INFO 1cf[0m Stopping
+2017-05-14 03:51:56.454 CST [gossip/discovery#10.1.24.241:7051] Stop -> INFO 1d1[0m Stopped
+[36m2017-05-14 03:51:56.454 CST [gossip/gossip#10.1.24.241:7051] handlePresumedDead -> DEBU 1d3[0m Exiting
+[36m2017-05-14 03:51:56.454 CST [gossip/discovery#10.1.24.241:7051] handleMessages -> DEBU 1d2[0m Stopped
+[36m2017-05-14 03:51:56.454 CST [gossip/discovery#10.1.24.241:7051] handlePresumedDeadPeers -> DEBU 1d4[0m Stopped
+2017-05-14 03:51:56.454 CST [gossip/comm#-1] Stop -> INFO 1d0[0m Stopping
+[36m2017-05-14 03:51:56.454 CST [gossip/comm#-1] Stop -> DEBU 1d6[0m Shut down connection store, connection count: 0
+[36m2017-05-14 03:51:56.454 CST [gossip/comm#-1] Stop -> DEBU 1d7[0m Shut down publisher
+[36m2017-05-14 03:51:56.454 CST [gossip/comm#-1] Stop -> DEBU 1d8[0m Closed subscriptions, waiting for goroutines to stop...
+[36m2017-05-14 03:51:56.454 CST [gossip/gossip#10.1.24.241:7051] acceptMessages -> DEBU 1d5[0m Exiting
+[33m2017-05-14 03:51:56.454 CST [gossip/comm#-1] 1 -> WARN 1d9[0m Recovered
+[36m2017-05-14 03:51:56.454 CST [gossip/comm#-1] func1 -> DEBU 1da[0m Exiting Accept() loop
+2017-05-14 03:51:56.454 CST [gossip/comm#-1] Stop -> INFO 1db[0m Stopped
+2017-05-14 03:51:56.454 CST [main] main -> INFO 1dc[0m Exiting.....
