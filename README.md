@@ -9,13 +9,13 @@
 apt-get install libltdl-dev
 
 
-1 下载fabric 源码
+1. 下载fabric 源码
 
 git clone https://github.com/hyperledger/fabric.git
 
-2.进入fabric 目录
+2. 进入fabric 目录
 
-3.执行 make peer orderer 命令
+3. 执行 make peer orderer 命令
 
 ### fabric v alpha 1.0 部署
 
@@ -23,11 +23,14 @@ git clone https://github.com/hyperledger/fabric.git
 ![Alt text](./images/pic1.png)
 
 在部署节点之前首先做以下操作
-1，拉取镜像
+1. 拉取镜像
 执行fabric_images下pull.sh脚本
 
 
-部署peer
+# 部署peer
+
 执行fabric_peer_release下peer.sh
-部署order
+
+# 部署order
+
 执行fabric_orderer_release下order.sh
