@@ -34,3 +34,9 @@ git clone https://github.com/hyperledger/fabric.git
 # 部署order
 
 执行fabric_orderer_release下order.sh
+
+
+### fabrci ca 的部署和运行 
+
+
+
