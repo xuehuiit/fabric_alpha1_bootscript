@@ -115,7 +115,7 @@ peer chaincode instantiate -o 172.16.10.81:7050 -C testChannel1 -n marbles1 -v 1
 ### invoke
 
 ```
-peer chaincode invoke -o 0.0.0.0:7050 -C testChannel1 -n marbles1 -c '{"Args":["getHistoryForMarble","marble1"]}
+peer chaincode invoke -o 172.16.10.81:7050 -C testChannel1 -n marbles1 -c '{"Args":["getHistoryForMarble","marble1"]}
 ```
 
 ### fabric-ca 的编译和安装使用过程
