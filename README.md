@@ -32,8 +32,12 @@ brew install libtool openssl
 1. 下载fabric 源码
 
    git clone https://github.com/hyperledger/fabric.git
+   
+   
 
 2. 进入fabric 目录
+
+   git reset --hard f3c61e6cc3b04915081b15bbed000b377b53c4c1
 
 3. 执行 make peer orderer 命令
 
