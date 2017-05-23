@@ -141,6 +141,4 @@ fabric-ca-client enroll -u http://peer2:peer2wd@172.16.10.81:19900 -M /usr/fabri
 目前181上面已经安装有一个ca服务器供大家学习参考
 
 
-
-
-
+如果您在配置过程中遇到问题欢迎加入  旺链区块链Q&A http://ks.blockchain001.com 参与讨论
