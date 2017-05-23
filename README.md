@@ -31,7 +31,7 @@ brew install libtool openssl
 
 1. 下载fabric 源码
 
-   git clone https://github.com/hyperledger/fabric.git
+  git clone https://github.com/hyperledger/fabric.git
 
 2. 进入fabric 目录
 
