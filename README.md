@@ -41,7 +41,7 @@ brew install libtool openssl
 
 如果上一步骤没有编译成功，接下来的操作也可以完成，我把编译成功的order，peer 二进制文件 copy到以下目录中：
 ![Alt text](./images/pic1.png)
-> bin 目录下的peer,orderer 可以做Ubuntu，centOS 环境下执行，如果是windows,mac 环境需按照上一章节的步骤自行编译。
+> bin 目录下的peer,orderer 可以在Ubuntu，centOS 环境下执行，如果是windows,mac 环境需按照上一章节的步骤自行编译。
 
 在部署节点之前首先做以下操作
 1. 拉取镜像
