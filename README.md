@@ -77,7 +77,43 @@ Usage:
 #### example 启动一个peer节点
 
 ```
-/peer.sh -p peer0  -l 172.16.10.81:7051 -g 172.16.10.81:7051 -o 172.16.10.82:7050 -m /home/fabric_alpha1_bootscript/fabric_peer_release/msp/crypto-config/peerOrganizations/peerOrg1/peers/peerOrg1Peer1 -O PeerOrg1 
+/peer.sh -p peer0  -l 0.0.0.0:7051 -g 0.0.0.0:7051 -o 0.0.0.0:7050 -m /home/fabric_alpha1_bootscript/fabric_peer_release/msp/crypto-config/peerOrganizations/peerOrg1/peers/peerOrg1Peer1 -O PeerOrg1 
+```
+
+### 创建通道
+
+```
+root@gcc2ge:/home/fabric_alpha1_bootscript/fabric_peer_release/peer# ./create.sh 
+```
+
+### 加入通道
+
+```
+root@gcc2ge:/home/fabric_alpha1_bootscript/fabric_peer_release/peer# ./join.sh 
+```
+
+### 执行环境变量
+
+```
+root@gcc2ge:/home/fabric_alpha1_bootscript/fabric_peer_release/peer# source /env.sh
+```
+
+### 安装chaincode
+
+```
+peer chaincode install -o 0.0.0.0:7050 -n marbles1 -v 1 -p github.com/hyperledger/fabric/examples/chaincode/go/marbles02
+```
+
+### instantiate
+
+```
+peer chaincode instantiate -o 0.0.0.0:7050 -C testChannel1 -n marbles1 -v 1 -p github.com/hyperledger/fabric/examples/chaincode/go/marbles02 -c '{"Args":[""]}'
+```
+
+### invoke
+
+```
+peer chaincode invoke -o 0.0.0.0:7050 -C testChannel1 -n marbles1 -c '{"Args":["getHistoryForMarble","marble1"]}
 ```
 
 ### fabric-ca 的编译和安装使用过程
