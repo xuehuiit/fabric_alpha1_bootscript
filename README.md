@@ -75,7 +75,10 @@ Usage:
  ./peer.sh -p peer0  -l 172.16.10.81:7051 -g 172.16.10.81:7051 -o 172.16.10.82:7050 -m /home/fabric_alpha1_bootscript/fabric_peer_release/msp/crypto-config/peerOrganizations/peerOrg1/peers/peerOrg1Peer1 -O PeerOrg1 
  ```
 #### example 启动一个peer节点
+
+```
 /peer.sh -p peer0  -l 172.16.10.81:7051 -g 172.16.10.81:7051 -o 172.16.10.82:7050 -m /home/fabric_alpha1_bootscript/fabric_peer_release/msp/crypto-config/peerOrganizations/peerOrg1/peers/peerOrg1Peer1 -O PeerOrg1 
+```
 
 ### fabric-ca 的编译和安装使用过程
 
