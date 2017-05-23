@@ -97,7 +97,7 @@ root@gcc2ge:/home/fabric_alpha1_bootscript/fabric_peer_release/peer# ./join.sh
 ### 执行环境变量
 
 ```
-root@gcc2ge:/home/fabric_alpha1_bootscript/fabric_peer_release/peer# source /env.sh
+root@gcc2ge:/home/fabric_alpha1_bootscript/fabric_peer_release/peer# source ./env.sh
 ```
 
 ### 安装chaincode
